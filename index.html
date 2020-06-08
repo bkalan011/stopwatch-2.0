@@ -1,27 +1,44 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-<meta charset="UTF-8"> 
-<title>Clock</title> 
-<link rel="stylesheet" href="styles.css"> 
-<script src="script.js"></script> 
-</head> 
-<body> 
-<main> 
-<fieldset>
-    <div id="display">
-    <legend>Stop Watch</legend>
-    <a href="#" id="start" onclick="startStopwatch()">Start</a>&nbsp;
-  
-    <a href="#" id="stop" onclick="stopStopwatch()">Stop</a>&nbsp;
-  
-    <a href="#" id="reset" onclick="resetStopwatch()">Reset</a>&nbsp;
-  
-    <span id="s_minutes">00</span>:
-    <span id="s_seconds">00</span>:
-    <span id="s_ms">000</span>
-</div>
-  </fieldset>
-</main> 
-</body> 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Stopwatch</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- JavaSCript -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="row">
+    </div>
+    <div class="row">
+    </div>
+    <div class="container">
+        <div class="row" id="display">
+        </div>
+
+        <div class="section">
+            <h2 class="center">Stopwatch</h2>
+        </div>
+        <div class="section center" id="display">
+            <span class="flow-text" id="s_minutes">00</span>:
+            <span class="flow-text" id="s_seconds">00</span>:
+            <span class="flow-text" id="s_ms">000</span>
+        </div>
+        <div class="section center">
+            <a href="#" id="start" class="waves-effect waves-light orange darken-3 btn" onclick="startStopwatch()"><i class="material-icons center">start</i></a>&nbsp;
+
+            <a href="#" id="stop" class="waves-effect waves-light orange darken-3 btn" onclick="stopStopwatch()"><i class="material-icons center">stop</a>&nbsp;
+
+            <a href="#" id="reset" class="waves-effect waves-light orange darken-3 btn" onclick="resetStopwatch()"><i class="material-icons center">reset</a>&nbsp;
+        </div>
+    </div>
+</body>
+
 </html>
